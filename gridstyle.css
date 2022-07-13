@@ -1,0 +1,35 @@
+.gridSquare {
+    display: flex;
+    flex-direction: column;
+    width: 513px;
+    height:513px;
+    margin:auto;
+  }
+  
+.row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    
+  }
+
+.eachBox {
+    display: flex;
+    border:1px solid black;
+    width: 100%;
+    height: 100%;
+  }
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  margin: 40px 0px 40px 0px;
+}
