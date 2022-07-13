@@ -7,7 +7,11 @@ function makeBlocks() {
         for (var j = 0; j < size; j++) {
             var box = document.createElement('div');
             box.className = "eachBox";
-            box.addEventListener("mouseover", function(e) {e.target.style.backgroundColor = "black"; });
+            box.addEventListener("mouseover", function(e) {
+                let randomGBAOne = Math.floor(Math.random() *255 + 0);
+                let randomGBATwo = Math.floor(Math.random() *255 + 0);
+                let randomGBAThree = Math.floor(Math.random() *255 + 0);
+                e.target.style.backgroundColor = "rgb(" + randomGBAOne + "," + randomGBATwo + "," + randomGBAThree + ")"; });
             row.appendChild(box);
         }                
         gridForm.append(row);
@@ -36,7 +40,11 @@ function changeBlocks() {
                 for (var j = 0; j < newSize; j++) {
                     var box = document.createElement('div');
                     box.className = "eachBox";
-                    box.addEventListener("mouseover", function(e) {e.target.style.backgroundColor = "black"; });
+                    box.addEventListener("mouseover", function(e) {
+                        let randomGBAOne = Math.floor(Math.random() *255 + 0);
+                        let randomGBATwo = Math.floor(Math.random() *255 + 0);
+                        let randomGBAThree = Math.floor(Math.random() *255 + 0);
+                        e.target.style.backgroundColor = "rgb(" + randomGBAOne + "," + randomGBATwo + "," + randomGBAThree + ")"; });
                     row.appendChild(box);
                 }                
                 gridForm.append(row);
